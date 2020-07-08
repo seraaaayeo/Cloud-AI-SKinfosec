@@ -5,7 +5,7 @@ SK infosec의 신입사원 교육 Cloud AI 융합전문가 과정 진행상황 �
 
 ## What I Learned
 ### Week2
-* *Python 기본문법*
+* **Python 기본문법**
 * 실습 목록
     * day2: datetime을 이용하여 요일 반환
     * day3: 
