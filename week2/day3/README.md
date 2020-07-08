@@ -14,10 +14,10 @@
     - double quotation(") - more than two character
 * Thread: 최소 작업 단위
 * time: Unix time반환
-    '''
+    ```
     import time
     time.time()
-    '''
+    ```
 
 ## 파이썬 함수 만드는 법을 배웠음.
 * 가변 매개변수
