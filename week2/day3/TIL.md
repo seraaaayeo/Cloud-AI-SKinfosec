@@ -19,9 +19,26 @@
     time.time()
     '''
 
+## 파이썬 함수 만드는 법을 배웠음.
+* 가변 매개변수
+    - 혼자서 공부한 내용을 오후에 배웠다.
+    ```
+    def print_n_times(n, *val):
+        for i in range(n):
+            print(val)
+    ```
+    ```
+    print_n_times(3, "test") #("test",) ("test",) ("test",)
+    ```
+* return tuples: 여러 개의 변수를 return할 때
+    - return param1 -> 호출한 쪽에 하나의 데이터 전달
+    - return param1, param2 -> (param1, param2) 튜플의 하나의 객체로 리턴됨.
+
+
 ## 실습
 * for문으로 짝수만 출력하라해서 입력을 random함수로 바꿔봤음
 * for문으로 구구단을 출력하였음
+* while, if등 조건문을 사용하여 수강생 관리 CRUD 시스템을 만들었음.
 
 ***
 
