@@ -45,7 +45,7 @@ class AIController:
 
     def get_entity_controller(self, email):
         #email valid check - regular express사용 email 형식 체크
-        if email == "" or len(email)==0:
+        if email != None:
             message_display("잘못된 이메일 형식")
         else:
             #buisness method delegation
@@ -55,4 +55,11 @@ class AIController:
                 ai_entity_display(ai_entity)
             else:
                 message_display("존재하지 않습니다.")
-            
+    
+    def file_read(self):
+        bm = service.AIService()
+        bm.read_list()
+
+    def file_write(self):
+        bm = service.AIService()
+        bm.save_list()

@@ -1,8 +1,9 @@
 from class_exception import DuplicateException, RecordNotFoundException
 from class_domain import AIEntity
+import class_filestore
 
 class AIService:
-    #AIEntuty 정보를 저장하는 클래스 변수
+    #AIEntuty 정보를 저장하는 클래스 변수. 클래스 로드 시점에 초기화됨. 모든 클래스 멤버에서 공유.
     ai_list = []
 
     def register(self, ai_entity):
@@ -65,3 +66,9 @@ class AIService:
             if entity.email == email:
                 return idx
         return -1
+
+    def save_list(self):
+        class_filestore.save_data(AIService.ai_list)
+
+    def read_list(self):
+        AIService.ai_list = class_filestore.read_data()
