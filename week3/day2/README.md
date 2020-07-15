@@ -28,6 +28,7 @@
 ## Docker
 * 도커 설치하기(윈도우 10 기준)
     * 가상화 확인
+        * ![cpu확인](https://user-images.githubusercontent.com/53554014/87384742-7a606680-c5d7-11ea-881f-c5ff7ca6e8bd.png)
         * ctrl+shift_esc = cpu확인
         * 가상화 사용안됨 일 때 -> 재부팅하고 켜지는동안 fn(function)+F2+F8 동시에 누르기(fn키는 계속 누르고 있어야됨)
         * 그러면 무슨 화면 뜸. hyper V 사용하기(?) 체크
