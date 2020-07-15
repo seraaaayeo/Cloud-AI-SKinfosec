@@ -36,6 +36,7 @@
         * 그러면 무슨 화면 뜸. hyper V 사용하기(?) 체크
     * 도커 툴박스 설치
     * 오라클 버츄얼 박스(서버역할) - 도커툴박스(클라이언트 역할)
+        - ![Docker](https://user-images.githubusercontent.com/53554014/87388057-fb6f2c00-c5de-11ea-99a8-5e9ad5db571b.png)
         - 버츄얼박스에서 리눅스 서버를 실행시킨다.
         - 도커 툴박스에서 도커 명령어를 실행할 수 있다.
     * Infra Architecture
