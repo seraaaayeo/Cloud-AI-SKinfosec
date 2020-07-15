@@ -28,15 +28,15 @@
 ## Docker
 * 도커 설치하기(윈도우 10 기준)
     * 가상화 확인
-        * ![cpu확인](https://user-images.githubusercontent.com/53554014/87384742-7a606680-c5d7-11ea-881f-c5ff7ca6e8bd.png)
+        * <img src="https://user-images.githubusercontent.com/53554014/87384742-7a606680-c5d7-11ea-881f-c5ff7ca6e8bd.png" width="60%" height="60%" alt="cpu확인"></img>
         * ctrl+shift_esc = cpu확인
-        * ![hyper-V](https://user-images.githubusercontent.com/53554014/87386589-d1683a80-c5db-11ea-9151-302c014ad1fb.png)
+        * <img src="https://user-images.githubusercontent.com/53554014/87386589-d1683a80-c5db-11ea-9151-302c014ad1fb.png" width="80%" height="80%" alt="hyper"></img>
         * 제어판 - 프로그램 및 기능 - windows기능 켜기/끄기 - hyper-V 사용 체크
         * 가상화 사용안됨 일 때 -> 재부팅하고 켜지는동안 fn(function)+F2+F8 동시에 누르기(fn키는 계속 누르고 있어야됨)
         * 그러면 무슨 화면 뜸. hyper V 사용하기(?) 체크
     * 도커 툴박스 설치
     * 오라클 버츄얼 박스(서버역할) - 도커툴박스(클라이언트 역할)
-        - ![Docker](https://user-images.githubusercontent.com/53554014/87388057-fb6f2c00-c5de-11ea-99a8-5e9ad5db571b.png)
+        - <img src="https://user-images.githubusercontent.com/53554014/87388057-fb6f2c00-c5de-11ea-99a8-5e9ad5db571b.png" width="80%" height="80%" alt="docker"></img>
         - 버츄얼박스에서 리눅스 서버를 실행시킨다.
         - 도커 툴박스에서 도커 명령어를 실행할 수 있다.
     * Infra Architecture
