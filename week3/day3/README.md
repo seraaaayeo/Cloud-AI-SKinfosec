@@ -24,7 +24,7 @@
     ```
     docker rm hello-world //name으로 지우기
     docker rm bf756fb1ae65 //ID로 지우기
-    docker image prune //사용하지 않는 이미지 삭제
+    docker system prune //사용하지 않는 이미지 삭제
     docker rm -v //exit된 컨테이너를 한 번에 삭제
     ```
     - ![image](https://user-images.githubusercontent.com/53554014/87495915-75f68500-c68d-11ea-8a53-bd68a55e14cf.png)
