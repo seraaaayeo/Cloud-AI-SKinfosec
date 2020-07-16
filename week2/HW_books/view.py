@@ -1,5 +1,4 @@
-import data_in as save_data
-import data_out as read_data
+import data_io as data
 import create
 import read
 import update
@@ -7,7 +6,7 @@ import delete
 
 def view():
     try:
-        info_arr = read_data.read_data("book_list.txt")
+        info_arr = data.read_data("book_list.txt")
     except:
         print("No data exists")
         info_arr = []
@@ -38,7 +37,7 @@ def view():
             print("해당 도서 등록 번호: ", read.ai_num(get_name, info_arr))
         elif menu == int(7):
             print("시스템 종료")
-            save_data.save_list("book_list.txt", read.ai_list(info_arr))
+            data.save_list("book_list.txt", read.ai_list(info_arr))
             break
         else:
             print("no proper number: 시스템 종료")
