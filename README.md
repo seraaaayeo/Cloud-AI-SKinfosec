@@ -19,7 +19,7 @@ SK infosec의 신입사원 교육 Cloud AI 융합전문가 과정 진행상황 �
         - 파일 입출력 실습
 ### Week3
 * OOP의 정의와 특성 등
-* **Docker**
+* **Docker**, docker를 이용한 이미지 빌드하기
 * 실습 목록
     * day1:
         - class를 이용하여 수강생 관리 시스템 수정
