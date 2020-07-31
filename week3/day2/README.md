@@ -31,10 +31,32 @@
         * <img src="https://user-images.githubusercontent.com/53554014/87384742-7a606680-c5d7-11ea-881f-c5ff7ca6e8bd.png" width="60%" height="60%" alt="cpu확인"></img>
         * ctrl+shift_esc = cpu확인
         * <img src="https://user-images.githubusercontent.com/53554014/87386589-d1683a80-c5db-11ea-9151-302c014ad1fb.png" width="80%" height="80%" alt="hyper"></img>
-        * 제어판 - 프로그램 및 기능 - windows기능 켜기/끄기 - hyper-V 사용 체크
         * 가상화 사용안됨 일 때 -> 재부팅하고 켜지는동안 fn(function)+F2+F8 동시에 누르기(fn키는 계속 누르고 있어야됨)
-        * 그러면 무슨 화면 뜸. hyper V 사용하기(?) 체크
-    * 도커 툴박스 설치
+        * 그러면 무슨 화면 뜸. BIOS 창이라 부른다. 보안 또는 CPU 설정 화면에서 Virtualization Technology, 또는 SVM Mode - Enable
+    * 가상화 enabled이지만 에러가 뜰 때가 있다.
+        ```
+        Error with pre-create check: "This computer doesn't have VT-X/AMD-v enabled. Enabling it in the BIOS is mandatory"
+        ```
+        * [참고자료](https://janghyeonjun.github.io/issue/docker_toolbox_error/)
+        * 현재 나는 '가상화 사용'상태이므로 첫 번째 방법은 패스. 코어 격리 기능은 꺼져있다.
+        * 따라서 CMD창에서 다음 명령어 사용.
+        ```
+        docker-machine create -d virtualbox --virtualbox-memory=2048 --virtualbox-no-vtx-check default
+        ```
+        * 사진
+    * ~제어판 - 프로그램 및 기능 - windows기능 켜기/끄기 - hyper-V 사용 체크~
+        * **2020-07-30 업데이트**
+        ```
+        Error with pre-create check: "This computer is running Hyper-V. VirtualBox won't boot a 64bits VM when Hyper-V is activated. Either use Hyper-V as a driver, or disable the Hyper-V hypervisor. (To skip this check, use --virtualbox-no-vtx-check)"
+        ```
+        * OS 설정에서 hyper-V를 유효화하면 Oracle virtualBox와 같은 다른 가상화 툴은 사용할 수 없다.(이미지 첨부하기)
+        * docker toolbox는 oracle virtualbox를 사용하기 때문에 해당 오류가 뜨는 것.
+        * docker desktop의 window용인 Docker for windows는 windows10 이후 사용 가능하며, Microsoft가 제공하는 하이퍼바이저인 x64용 가상화 시스템 hyper-V를 사용한다.
+        ```
+        따라서 docker desktop을 사용할 경우에 hyper-V 사용을 세팅한다. docker toolbox를 사용하는 경우에 hyper-v를 세팅하면 오류가 뜬다.
+        ```
+    * [도커 툴박스 설치](https://github.com/docker/toolbox/releases)
+        * [참고자료](https://docs.docker.com/toolbox/toolbox_install_windows/)
     * 오라클 버츄얼 박스(서버역할) - 도커툴박스(클라이언트 역할)
         - <img src="https://user-images.githubusercontent.com/53554014/87388057-fb6f2c00-c5de-11ea-99a8-5e9ad5db571b.png" width="80%" height="80%" alt="docker"></img>
         - 버츄얼박스에서 리눅스 서버를 실행시킨다.
