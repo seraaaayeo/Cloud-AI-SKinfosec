@@ -26,6 +26,7 @@ SK infosec의 신입사원 교육 Cloud AI 융합전문가 과정 진행상황 �
 ### Week5
 * 모듈 프로젝트: mysql docker image와 GUI를 이용한 여행 클럽 관리 시스템
 * Stack
+
 |  <center>Stack</center> |  <center>Description</center> |  
 |:--------|:--------:|
 |**Python** | <center>v3.7 or higher</center> |
